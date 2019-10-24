@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS - Positions 2</title>
+</head>
+
+<body>
+<!-- Static é a posição padrão de todo e qualquer elemento HTML -->
+<!-- Relative é a posição do elemento relativo ao pai dele -->
+<!-- Absolute é a posição do elemento relativo ao pai dele (respeita as diretrizes do pai) -->
+<!-- Fixed é a posição do elemento relativo ao pai (respeita as diretrizes da tela) -->
+
+<!-- A propriedade position permite que alteremos a posição do elemento (left, top, right, bottom). caso nenhum valor seja definido, o elemento será renderizado na posição "inicial-padrão" -->
+
+<div class="container">
+    <div class="static-or-relative">
+      static or relative
+      <div class="absolute">absolute</div>
+      <div class="fixed">fixed</div>
+    </div>
+  </div>
+  
+  <div class="fixed-2">fixed - 2</div>
+     
+</body>
+
+<style>
+    * { margin: 0; padding: 0; }
+
+.container {
+  position: relative;
+  background-color: red;
+  width: 450px;
+  height: 450px;
+}
+
+/* toggle */
+.static-or-relative {
+/*   position: static; */
+  position: relative;
+  background-color: blue;
+  width: 350px;
+  height: 350px;
+}
+
+.absolute {
+  position: absolute;
+  background-color: yellow;
+  bottom: 0;
+}
+
+.fixed {
+  position: fixed;
+  background-color: green;
+/*   bottom: 0; */
+}
+
+.fixed-2 {
+  position: fixed;
+  background-color: green;
+/*   bottom: 0; */
+}
+</style>
+
+</html>
