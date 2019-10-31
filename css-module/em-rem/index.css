@@ -1,0 +1,32 @@
+/* alterar o font-size do HTML irá alterar o tamanho de todos os elementos! */
+html {
+    font-size: 16px;
+  }
+    
+  #outer {
+    font-size: 2rem; /* 16px (font-size do html) * 2 = 32px */
+  }
+  
+  #inner-em {
+    /*
+      nesse caso, vamos olhar o tamanho font do
+      elemento pai (div#outer) para calcular o tamanho da fonte desse elemento
+    */
+    font-size: 1.5em; /* 32px * 1.5em = 48px */
+    
+    /* 1em nesse caso é 48px (pois é o tamanho da font-size definido na linha de cima) */
+    border: 1em solid red;
+    
+    /* 1rem nesse caso é 16px (pois é o tamanho da font-size do html) */
+  /*   border: 1rem solid red; */
+    
+  }
+  
+  #inner-rem {
+    /*
+      rem sempre trabalha em relação à raiz
+      no nosso caso o HTML element,
+      independente da estrutura do HTML
+    */
+    font-size: 2rem; /* 16px (font-size da tag HTML) * 2 = 32px */
+  }

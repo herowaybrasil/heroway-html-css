@@ -1,0 +1,40 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+/*   justify-content: space-between;
+  align-items: center; */
+  
+  width: 100%;
+  height: 400px;
+  background-color: purple;
+}
+
+.flex-item-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-item.flex-item-container div {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+}
+
+/* todas os flex-item irão crescer na mesma proporção (flex-grow: 1) e não irão encolher (flex-shrink: 0) */
+/* para o flex-shrink funcionar, precisamos definir um flex-basis, com o tamanho base do elemento */
+.flex-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 150px;
+  height: 100px;
+  background-color: orange;
+  border: 1px solid black;
+}
+
+/* o 2 flex-item será o unico que irá crescer 2x mais rápido que os outros e irá diminuir */
+.flex-item:nth-child(2) {
+  flex-grow: 2;
+  flex-shrink: 1;;
+  align-self: flex-end;
+}

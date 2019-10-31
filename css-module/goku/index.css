@@ -1,5 +1,7 @@
 body {
     width: 400px;
+    border: 2px solid #ccc;
+    padding: 10px;
   }
   
   h1 {
@@ -9,8 +11,8 @@ body {
   }
   
   #goku {
-    display: inline;
     height: 150px;
+    display: inline;
   }
   
   .section {
