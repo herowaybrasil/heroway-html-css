@@ -1,22 +1,22 @@
 body {
-    width: 400px;
-    border: 2px solid #ccc;
-    padding: 10px;
-  }
-  
-  h1 {
-    display: inline;
-    position: relative;
-    top: -70px;
-  }
-  
-  #goku {
-    height: 150px;
-    display: inline;
-  }
-  
-  .section {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    border-top: 1px solid #ccc;
-  }
+  width: 400px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  top: -70px;
+}
+
+#goku {
+  height: 150px;
+  display: inline;
+}
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-top: 1px solid #ccc;
+}

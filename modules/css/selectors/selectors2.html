@@ -2,38 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS - Selectors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS - Selectors</title>
 </head>
 
 <body>
-    <div class="selector-pai">
-        <div class="selector-aleatorio">
-            <div class="selector-filho-indireto">
-                Com grandes poderes vem grandes
-                responsabilidades
-            </div>
-        </div>
-    </div>
-
-    <div class="selector-pai">
-        <div class="selector-filho-direto">
-            Com grandes poderes vem grandes
-            responsabilidades
-        </div>
-    </div>
+  <input class="styled-input warning" placeholder="Digite..." />
+  <button class="styled-button warning">Clique aqui</button>
 </body>
 
 <style>
-    .selector-pai .selector-filho-indireto {
-        color: red;
-    }
+  /* Concatenar classes e remover redundancia (button & input) */
 
-    .selector-pai > .selector-filho-direto {
-        color: red;
-    }
+  .styled-button {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .styled-input {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gold;
+  }
+
+  .warning {
+    background-color: orange;
+    border-color: red;
+  }
 </style>
 
 </html>

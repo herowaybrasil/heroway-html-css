@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS - Selectors</title>
+</head>
+
+<body>
+  <div class="circulo-pai">
+    <!--   FILHO DIRETO ( .circulo-pai > .circulo) -->
+    <div class="circulo green"></div>
+    <div class="circulo"></div>
+
+    <div>
+      <!--   FILHO INDIRETO (.circulo-pai .circulo) -->
+      <div class="circulo"></div>
+    </div>
+  </div>
+
+  <div class="circulo com-borda"></div>
+  <div class="quadrado"></div>
+</body>
+
+<style>
+  .circulo-pai {
+    background-color: red;
+    border-radius: 100%;
+  }
+
+  .circulo,
+  .quadrado {
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+  }
+
+  .circulo {
+    border-radius: 100px;
+  }
+
+  .circulo-pai .circulo {
+    background-color: pink;
+  }
+
+  .circulo-pai>.circulo.green {
+    background-color: green;
+  }
+
+  .circulo.com-borda {
+    border: 10px solid black;
+  }
+</style>
+
+</html>
