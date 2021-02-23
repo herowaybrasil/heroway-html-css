@@ -9,39 +9,70 @@
 </head>
 
 <body>
-  <fieldset style="width: 250px; display:inline-block">
-    <legend><b><tt>Headings</tt></b></legend>
-    <h1>h1 - Page title</h1>
-    <h2>h2 - Subheading</h2>
-    <h3>h3 - Tertiary heading</h3>
-    <h4>h4 - Quaternary heading</h4>
+  <fieldset>
+    <legend><b>Headings</b></legend>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
   </fieldset>
 
-  <fieldset style="width: 150px; display:inline-block">
-    <legend><b><tt>Block Elements</tt></b></legend>
-    <div>div</div>
+  <fieldset>
+    <legend><b>Block Elements</b></legend>
     <p>p</p>
+    <div>div</div>
+    <main>main</main>
+    <article>article</article>
+    <section>section</section>
   </fieldset>
 
-  <fieldset style="width: 150px; display:inline-block">
-    <legend><b><tt>Form</tt></b></legend>
-    <form action="/action.php" method="post">
-      Name: <input name="name" type="text" /> <br />
-      Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
-      <select name="gender">
-        <option selected="selected" value="male">Male</option>
-        <option value="female">Female</option>
-      </select><br />
-      <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter"
-        type="radio" value="weekly" /> Weekly<br />
-      <textarea cols="20" name="comments" rows="5">Comment</textarea><br />
-      <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br />
-      <input type="submit" value="Submit" />
+  <fieldset>
+    <legend><b>Inline Elements</b></legend>
+    <span>span</span>
+    <a href="#">a</a>
+    <b>b</b>
+    <i>i</i>
+    <u>u</u>
+  </fieldset>
+
+  <fieldset>
+    <legend><b>Form</b></legend>
+    <form>
+      <div>
+        <label>Name:</label>
+        <input name="name" type="text" />
+      </div>
+      <div>
+        <select name="gender">
+          <option selected="selected" value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily
+        <input name="newsletter" type="radio" value="weekly" /> Weekly
+      </div>
+      <div>
+        <textarea cols="20" name="comments" rows="5">textarea</textarea>
+      </div>
+      <div>
+        <input name="terms" type="checkbox" value="tandc" />
+        <label>Accept terms</label>
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </fieldset>
 
-  <fieldset style="width: 150px; display:inline-block">
-    <legend><b><tt>List</tt></b></legend>
+  <fieldset>
+    <legend><b>List</b></legend>
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+
     <ul>
       <li>First</li>
       <li>Second</li>
@@ -49,19 +80,53 @@
     </ul>
   </fieldset>
 
-  <fieldset style="width: 150px; display:inline-block">
-    <legend><b><tt>Image</tt></b></legend>
-    <img src="https://www.desenhosinfantis.com/Imagens/homem-aranha-a-disparar-teias.jpg" alt="description" height="100" width="150" />
+  <fieldset>
+    <legend><b>Image</b></legend>
+    <img src="https://www.desenhosinfantis.com/Imagens/homem-aranha-a-disparar-teias.jpg" alt="description" height="100"
+      width="150" />
   </fieldset>
 
-  <fieldset style="width: 150px; display:inline-block">
-    <legend><b><tt>Inline</tt></b></legend>
-    <span>Underlined text</span>
-    <strong>Bold text</strong>
-    <em>Italic text</em>
-    <a href="#yourSite">Link To</a>
-
-  </fieldset>
+    <fieldset>
+      <legend><b>Table</b></legend>
+      <table>
+        <thead>
+          <tr>
+            <th>Hero</th>
+            <th>Publisher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Spider Man</td>
+            <td>Marvel</td>
+          </tr>
+          <tr>
+            <td>Batman</td>
+            <td>DC</td>
+          </tr>
+          <tr>
+            <td>Wonder Woman</td>
+            <td>Marvel</td>
+          </tr>
+          <tr>
+            <td>Thor</td>
+            <td>Marvel</td>
+          </tr>
+          <tr>
+            <td>Flash</td>
+            <td>DC</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
 </body>
+
+<style>
+  fieldset {
+    min-width: 150px;
+    display: inline-block;
+    margin-right: 25px;
+  }
+</style>
 
 </html>
